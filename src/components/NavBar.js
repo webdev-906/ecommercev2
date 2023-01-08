@@ -6,7 +6,7 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <>
+    <div>
       <BrowserRouter>
       <header>
         <nav>
@@ -25,7 +25,7 @@ const NavBar = () => {
         </Routes>
       </main>
       </BrowserRouter>
-    </>
+    </div>
   )
 }
 

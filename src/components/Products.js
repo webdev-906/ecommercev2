@@ -25,7 +25,7 @@ function Products() {
   const arr = data.filter((data) => {
     return engineSearch.toLowerCase() === '' ? data : data.engine_type.toLowerCase().includes(engineSearch) || 
     engineSearch === '$' ? data : data.price.includes(engineSearch)
-  }).map((data, index) => {
+  }).map((data) => {
     return (
       <div key={data.title}>
         <img src={data.image} alt={data.title}></img>
